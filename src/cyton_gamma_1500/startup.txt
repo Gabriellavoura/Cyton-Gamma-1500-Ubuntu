@@ -1,0 +1,21 @@
+For each terminal
+cd catkin_ws
+source devel/setup.bash
+
+terminal 1:
+roslaunch cyton_controllers controller_manager.launch
+
+terminal 2:
+roslaunch cyton_gamma_300_controllers start_controllers.launch
+OR
+roslaunch cyton_1500_controllers start_controllers.launch
+THEN
+rosrun cyton_controllers dynamixel_joint_state_publisher.py
+
+terminal 3:
+roslaunch cyton_gamma_pkg gamma_1500_planning_execution
+OR
+roslaunch cyton_gamma_pkg gamma_300_planning_execution
+
+terminal 4:
+python /home/rdtintern/catkin_ws/src/cyton_gamma_pkg/src/test_plan.py
