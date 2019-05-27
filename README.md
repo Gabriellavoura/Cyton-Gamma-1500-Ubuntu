@@ -124,3 +124,7 @@ Opcionalmente, você pode iniciar os dois aplicativos Qt front-end eles também 
 Isso iniciará o cliente moveit com o centro de comando RVIZ e a saída de simulação no gazebo.
 
 Foram testados e permitem o controle cartesiano, de espaço conjunto e de força. O controlador de ação da pinça é comandado diretamente, uma vez que os controladores internos do dinamômetro fazem um bom trabalho em uma junta de eixo único.  
+
+
+## RVIZ doenst show 
+export LC_NUMERIC="en_US.UTF-8"
