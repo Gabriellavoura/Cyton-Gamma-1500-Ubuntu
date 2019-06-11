@@ -1,7 +1,16 @@
 #!/bin/bash
+#Permissão para escrever e ler pela porta USB:
+sudo chmod 777 /dev/ttyUSB0
 
+#Senha para o usuario:
+
+echo "projeto"
+
+#Arruma o bug do RVIZ na versão Melodic.
+
+export LC_NUMERIC="en_US.UTF-8"
 source /opt/ros/melodic/setup.bash
-source /home/gabriellavoura/Documentos/Cyton_ROS_funcional/devel/setup.bash
+source /home/projeto/Documentos/catkin/devel/setup.bash
 
 echo "[1/5] start controller manager"
 
@@ -32,3 +41,6 @@ echo "[5/5] start combined front end"
 xterm -e rosrun cyton_gamma_pkg combined_front_end.py 2> /dev/null 1500 &
 
 echo "ready!"
+
+
+
